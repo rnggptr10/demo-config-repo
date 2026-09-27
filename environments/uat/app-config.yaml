@@ -21,3 +21,5 @@ data:
 integration:
   scm:
     baseURL: "https://localhost:8080/scm/api/v1"
+  vc:
+    baseURL: "https://localhost:8080/vc/api/v1"
