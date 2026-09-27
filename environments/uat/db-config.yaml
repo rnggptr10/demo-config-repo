@@ -1,0 +1,20 @@
+# ============================================================
+# Simulasi ConfigMap OCP: db-config
+# Ini merepresentasikan konfigurasi koneksi database
+# ============================================================
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+  namespace: demo-uat
+  labels:
+    app: myapp
+    env: uat
+    sync: enabled
+data:
+  DB_HOST: "db-uat.internal.bankmandiri.co.id"
+  DB_PORT: "5432"
+  DB_NAME: "myapp_uat"
+  DB_POOL_MIN: "5"
+  DB_POOL_MAX: "20"
+  DB_CONNECTION_TIMEOUT: "30000"
