@@ -18,3 +18,6 @@ data:
   APP_MAX_CONNECTIONS: "263"
   FEATURE_FLAG_NEW_UI: "false"
   FEATURE_FLAG_DARK_MODE: "true"
+integration:
+  scm:
+    baseURL: "https://localhost:8080/scm/api/v1"
